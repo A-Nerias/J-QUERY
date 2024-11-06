@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../BOOSTRAP/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../BOOSTRAP/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+</head>
+<style>
+  #accordion h3{
+background-color: #004d40;
+  }
+</style>
+<body>
+
+    <header>
+        <h1>NATURE</h1>
+    </header>
+
+    <section class="main-content">
+        <nav>
+            <h2>WIDGWETS</h2>
+            <ul class="nav flex-column mb-3">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link text-white d-flex align-items-center">
+                        <i class="bi bi-house-door me-2"></i>Home
+                    </a>
+                </li>
+                <!-- Dropdown 1 -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white d-flex align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#pagesDropdown1">
+                    <span class="d-flex align-items-center">
+                      <i class="bi bi-book me-2"></i>Pages 1
+                    </span>
+                    <i class="bi bi-chevron-right" id="pagesIcon1"></i>
+                  </a>
+                  <div class="collapse" id="pagesDropdown1">
+                    <ul class="nav flex-column ms-4">
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="accordion.html">Accordion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="autocomplete.html">Auto Complete</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="button.html">Button</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="checkbox.html">Check Box</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="control.html">Control Group</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- Dropdown 2 -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white d-flex align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#pagesDropdown2">
+                      <span class="d-flex align-items-center">
+                        <i class="bi bi-book me-2"></i>Pages 2
+                      </span>
+                      <i class="bi bi-chevron-right" id="pagesIcon2"></i>
+                    </a>
+                    <div class="collapse" id="pagesDropdown2">
+                      <ul class="nav flex-column ms-4">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="date.html">Date Picker</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="dialog.html">Dialog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="progress.html">Progress Bar</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="selectmenu.html">Select Menu</a>
+                        </li>
+                      </ul>
+                    </div>
+                </li>
+
+                <!-- Dropdown 3 -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white d-flex align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#pagesDropdown3">
+                      <span class="d-flex align-items-center">
+                        <i class="bi bi-book me-2"></i>Pages 3
+                      </span>
+                      <i class="bi bi-chevron-right" id="pagesIcon3"></i>
+                    </a>
+                    <div class="collapse" id="pagesDropdown3">
+                      <ul class="nav flex-column ms-4">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="slider.html">Slider</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="spinner.html">Spinner</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="tabs.html">Tabs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="tool.html">Tool Tip</a>
+                        </li>
+                      </ul>
+                    </div>
+                </li>
+              </ul>
+        </nav>
+
+        <article>
+            <h2><u><i>Accordion</i></u></h2>
+                <div id="accordion">
+                  <h3>The Environmentalist</h3>
+                  <div>
+                    <p>
+                      Nature is precious and irreplaceable. Every forest, ocean, and species
+                       is part of a delicate balance that we must protect from pollution, 
+                       deforestation, and climate change. It’s not just about conserving 
+                       plants and animals; it’s about preserving the web of life that 
+                       sustains us all. I see myself as part of an ecosystem—the health 
+                       of our planet directly affects my health, and protecting nature is
+                        a way of protecting ourselves. With environmental threats growing, 
+                        it feels urgent to act now.
+                    </p>
+                  </div>
+                  <h3>The Artist</h3>
+                  <div>
+                    <p>
+                      Nature is my greatest muse. The colors, textures, and shapes found 
+                      in the world around us inspire my work, and every sunrise or tree 
+                      can spark new ideas. For me, nature’s beauty lies in its diversity—from 
+                      the tiniest insects to vast landscapes, each detail is like a masterpiece.
+                       It reminds me that beauty exists everywhere, often in the most unexpected places. 
+                       Nature also reflects my emotions; a stormy sky can capture sadness, while a
+                        vibrant garden can mirror joy. It feels like nature speaks the language of the 
+                        soul, helping me express my feelings through art.
+                    </p>
+                  </div>
+                  <h3>The Scientist</h3>
+                  <div>
+                    <p>
+                      To me, nature is a complex web of interconnected systems that holds endless 
+                      mysteries to unravel. Studying it helps us understand how life functions, 
+                      from the microscopic cells in a leaf to the entire ecosystems they create. 
+                      Nature has evolved over millions of years, adapting to environmental changes,
+                       and I’m fascinated by how species survive and thrive in such diverse conditions. 
+                       Nature also offers an endless source of innovation through biomimicry, where 
+                       we design technology based on natural processes and structures. 
+                    </p>
+                    <ul>
+                      <li>Source of Inspiration</li>
+                      <li>Beauty in Diversity</li>
+                      <li>Reflection of Emotions</li>
+                    </ul>
+                  </div>
+                  <h3>The Spiritual Seeker</h3>
+                  <div>
+                    <p>
+                      I feel a profound connection with nature, a sense of oneness that is
+                       hard to describe. When I’m in the forest or by the ocean, I feel like 
+                       I am part of something bigger, something divine. Nature is a place of
+                        healing for me; the sound of waves, the rustling of leaves, or the 
+                        sight of towering mountains helps me find peace, balance, and clarity
+                         within myself. Nature is also a teacher, showing me lessons in patience,
+                          resilience, and harmony. 
+                    </p>
+                    <p>
+                      Watching the cycles of growth and renewal reminds me of life’s continuous flow, 
+                      and that everything has a season. To me, nature is sacred, and I feel a deep 
+                      sense of gratitude for its beauty and abundance. I try to honor it by being 
+                      mindful and respectful in all that I do, recognizing that each part of nature
+                       is a gift to be cherished.
+                    </p>
+                  </div>
+                </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>College of Information and Computing Sciences &copy; 2024</p>
+    </footer>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/js.js"></script>
+    <script>
+        // Toggle icons for each dropdown
+        function toggleIcon(dropdownId, iconId) {
+            document.getElementById(dropdownId).addEventListener('show.bs.collapse', function () {
+                document.getElementById(iconId).classList.remove('bi-chevron-right');
+                document.getElementById(iconId).classList.add('bi-chevron-down');
+            });
+            document.getElementById(dropdownId).addEventListener('hide.bs.collapse', function () {
+                document.getElementById(iconId).classList.remove('bi-chevron-down');
+                document.getElementById(iconId).classList.add('bi-chevron-right');
+            });
+        }
+
+        // Apply toggleIcon function to each dropdown
+        toggleIcon('pagesDropdown1', 'pagesIcon1');
+        toggleIcon('pagesDropdown2', 'pagesIcon2');
+        toggleIcon('pagesDropdown3', 'pagesIcon3');
+        $( function() {
+          $( "#accordion" ).accordion();
+        } );
+        </script>
+</body>
+</html>
